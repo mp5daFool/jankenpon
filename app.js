@@ -38,6 +38,7 @@ function jankenpon() {
      }
 
      console.log(`l'ordinateur a fait ${reponseRobot}`)
+     console.log(`Le joueur a fait ${reponse}`)
 
     if (reponse === reponseRobot) {
         console.log("Égalité ! On rejoue ce round.");
