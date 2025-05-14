@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hehehe</title>
-    <script src="app.js" defer></script>
-    <link rel="icon" href="assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre Feuille Ciseaux</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
+
 <body>
-    
-    <section>
-        <p>La fonction c'est jankenpon()</p>
-    </section>
+    <header class="flex justify-between align-center text-center" id="log">
+
+    </header>
+
+    <main class="container container-1200 text-center mt-64">
+
+        <section class="flex justify-center gap">
+            <div class="card dimension500" id="pierre">
+                <img src="assets/pierre.png" alt="" class="pfcImages" />
+                <h3>Pierre</h3>
+            </div>
+
+            <div class="card dimension500" id="feuille">
+                <img src="assets/feuille.png" alt="" class="pfcImages" />
+                <h3>Feuille</h3>
+            </div>
+
+            <div class="card dimension500" id="ciseau">
+                <img src="assets/ciseau1.png" alt="" class="pfcImages" />
+                <h3>Ciseaux</h3>
+            </div>
+
+        </section>
+
+        <section class="justify-center flex">
+
+            <div class="mt-32">
+                <h2 class="text-center">L'ordinateur a joué :</h2>
+                <div class="card dimension500" id="reponseRobot">
+
+                </div>
+            </div>
+
+        </section>
 
 
+
+
+
+    </main>
+    <!-- <script src="jeuSite.js" defer></script> -->
     <script src="app.js" defer></script>
+    <script src="nico2.js" defer></script>
 </body>
+
 </html>

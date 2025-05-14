@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'SF Pro';
-  src: url('./assets/SF-Pro-Display.ttf'); /* Remplacez par le chemin de votre police Apple-like */
+  src: url('./assets/SFPRODISPLAYREGULAR.otf'); /* Remplacez par le chemin de votre police Apple-like */
   font-weight: normal;
   font-style: normal;
 }
@@ -39,6 +39,17 @@
   --background: #ffffff;
   --radius: 12px;
   --transition: all 0.3s ease;
+}
+
+/*--------------------------------------------------
+🎨 Couleurs
+--------------------------------------------------*/
+.noir {
+    color: #000;
+}
+
+.gris {
+    color: #8e8e93;
 }
 
 /*--------------------------------------------------
@@ -214,7 +225,7 @@ header a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
 }
-.card:hover {
+.card1:hover {
   transform: translateY(-4px);
 }
 .card img {
@@ -258,12 +269,27 @@ header a:hover {
 /*--------------------------------------------------
 🧩 Utils
 --------------------------------------------------*/
-.mt-64 { margin-top: 64px; }
-.mt-32 { margin-top: 32px; }
-.p-24 { padding: 24px; }
-.bg-grey { background: var(--light-grey); }
-.text-center { text-align: center; }
-.radius { border-radius: var(--radius); }
+.mt-64 { 
+    margin-top: 64px; 
+}
+.mt-32 { 
+    margin-top: 32px; 
+}
+.p-24 { 
+    padding: 24px; 
+}
+.bg-grey { 
+    background: var(--light-grey); 
+}
+.text-center { 
+    text-align: center; 
+}
+.radius { 
+    border-radius: var(--radius); 
+}
+.vh100 {
+    height: 100vh;
+}
 
 /*--------------------------------------------------
 📎 Material Icons Adjustments
@@ -275,4 +301,33 @@ header a:hover {
 }
 .btn .material-icons {
   margin-right: 8px;
+}
+
+/*--------------------------------------------------
+🧱 Autres
+--------------------------------------------------*/
+
+.pfcImages {
+    width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--light-grey);
+}
+
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.dimension500 {
+    width: 300px;
+    height: 300px;
+}
+
+.dimenson200 {
+    width: 200px;
+    /* height: 200px; */
 }
