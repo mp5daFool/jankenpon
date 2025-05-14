@@ -13,14 +13,16 @@ function jankenpon() {
     
     
     let max = 3; // Le nombre maximal d'essai qu'on a pour trouver le nombre aléatoire
+    let scoreOrdinateur = 0
+    let scoreJoueur = 0
 
    
 
     for (let essai = 1; essai <= max; essai++) { // Ici, la variable essai est une boucle qui s'arrete lorsque le nombre maximal d'essai est franchi. Mise en pause grâce au fait qu'on utilise le Prompt
 
-         let nombreAleatoire = Math.floor(Math.random() * 3) + 1; // Math floor permet de prendre un arrondi à l'inférieur, dans ce cas si, il arrondi le nombre aléatoire compris entre 1 et 3
+         let nombreAleatoire = Math.floor(Math.random() * 3) + 1; // Math floor permet de prendre un arrondi à l'inférieur, dans ce cas si, il arrondi le nombre aléatoire compris entre 1 et 3   
 
-        
+        console.log(`Score Joueur = ${scoreJoueur} - Score Ordinateur = ${scoreOrdinateur}`)
 
      let reponse = prompt(`Round ${essai}/${max}: Vous jouez à Chifumi, choisissez entre : pierre, feuille ou ciseau`).toLowerCase();
      let reponseRobot = "";
@@ -58,10 +60,8 @@ function jankenpon() {
         console.log("L'ordinateur a gagné ce round.");
        }
 
-       let scoreOrdinateur = 0
-       let scoreJoueur = 0
-
-       console.log(`Score Joueur = ${scoreJoueur} - Score Ordinateur = ${scoreOrdinateur}`)
+       
+    
 }
     
     if (scoreJoueur > scoreOrdinateur) {
@@ -70,5 +70,7 @@ function jankenpon() {
 else {
     console.log("L'ordinateur vous a battu");
 }
+
+console.log(`Score final : Joueur ${scoreJoueur} - Ordinateur ${scoreOrdinateur}`)
      // Il est important de mettre l'échec en dehors de la boucle, comme ça il s'affiche dès que le prompt se ferme, et donc "que le temps reprends" ce qui n'arrive pas si le réponse est trouvée avant le nombre d'essais dépassé comme le message gagné est inclus dans la boucle
 }
